@@ -49,6 +49,37 @@
     <![endif]-->
 
 
+    <div class="search">
+      <div class="container">
+        <form class="form-inline">
+          <div class="form-group search-group">
+            <div class="input-group search-input-group">
+              <div class="input-group-addon search-addon">
+                <img src="images/icons/search.svg" alt="search">
+              </div>
+              <input type="text" class="form-control search-txt" id="exampleInputAmount" placeholder="Search your favorite products!">
+              <div class="btn-cancel" id="search-close">
+                <img src="images/icons/close.svg" alt="close">
+              </div>
+            </div>
+          </div>
+        </form>
+        <br>
+        <div class="sugg-hd">Trending Products</div>
+        <div class="suggestions">
+          <div class="items"><img src="images/icons/search/tie.svg" alt="ties"></div>
+          <div class="items"><img src="images/icons/search/top.svg" alt="tops"></div>
+          <div class="items"><img src="images/icons/search/homeapp.svg" alt="vaccum"></div>
+          <div class="items"><img src="images/icons/search/shoes.svg" alt="shoes"></div>
+          <div class="items"><img src="images/icons/search/top.svg" alt="tops"></div>
+          <div class="items"><img src="images/icons/search/tie.svg" alt="ties"></div>
+          <div class="items"><img src="images/icons/search/shoes.svg" alt="shoes"></div>
+          <div class="items"><img src="images/icons/search/homeapp.svg" alt="vaccum"></div>
+        </div>
+      </div>
+    </div>
+
+
     <!-- Navbar -->
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -86,7 +117,7 @@
               </ul>
             </li>
             <li>
-              <a href="#">
+              <a id="search-icon">
                 <i class="fa fa-search" aria-hidden="true"></i>
               </a>
             </li>
@@ -156,7 +187,9 @@
         </div><!-- navbar-collapse -->
       </div><!-- container-fluid -->
     </nav>
+
     <div class="overlay"></div>
+
     <!-- Navbar End -->
 
 
