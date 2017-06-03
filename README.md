@@ -1,4 +1,4 @@
-#Tribee Landing Page
+#BuyBlue Landing Page
 
 ###Installation
 
@@ -21,7 +21,3 @@ do `bower install`
 ###To run built project
 
 `gulp serve:dist`
-
-
-###More information
-Link: https://github.com/yeoman/generator-webapp#readme
