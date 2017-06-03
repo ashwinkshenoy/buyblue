@@ -23,6 +23,7 @@ $black2: #585858;
 $black3: #868686;
 $grey1: #cccccc;
 $grey2: #e2e2e2;
+$grey3: #393939;
 // Colors end
 
 
@@ -584,7 +585,7 @@ img {
 .section4 {
   background: #222;
   padding: 20px;
-  border-bottom: solid 1px #ccc;
+  border-bottom: solid 1px #656565;
   .foo1 {
     display: flex;
     .foo-txt1 {
@@ -620,5 +621,87 @@ img {
 // Footer
 .main-foo {
   @extend .section4;
+  padding: 0;
+
+  .foo-box,
+  .foo-mob-col-inverse {
+    padding: 40px 60px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+
+    .foo-txt1 {
+      color: $grey1;
+      margin-top: 5px;
+    }
+  }
+  .foo-logo {
+    font-size: 22px;
+    color: $grey1;
+    font-family: 'PT Serif', serif;
+  }
+  .ash-foo {
+    color: #929292;
+    font-style: italic;
+    margin-top: 15px;
+  }
+  .vert-line2 {
+    border-right: solid 1px #656565;
+  }
+  .form-group {
+    display: flex;
+  }
+  .mail-group {
+    display: flex;
+    width: 100%;
+  }
+  .in-addon {
+    background: $grey3;
+    color: $white;
+    border-radius: 50px 0 0 50px;
+    font-size: 20px;
+    padding: 8px 15px;
+    border: 0;
+    max-height: 40px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  .in-txt1 {
+    background: $grey3;
+    color: $white;
+    height: 40px;
+    font-size: 17px;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding-left: 8px;
+    display: flex;
+    flex: 10;
+  }
+  .mail-btn,
+  .mail-btn:hover,
+  .mail-btn:focus {
+    outline: none;
+    background: $grey3;
+    color: $white;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 0 50px 50px 0;
+    margin-left: -4px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .foo-mob-col-inverse {
+      padding: 20px 30px;
+      height: auto;
+      flex-direction: column-reverse;
+    }
+  }
 }
 // Footer end
