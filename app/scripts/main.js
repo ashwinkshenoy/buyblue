@@ -13,7 +13,7 @@ $(document).ready(function(){
     // console.log(currentSlide);
   });
   $('.content').bind('click', function() {
-    console.log($(this).data('id'));
+    // console.log($(this).data('id'));
     var index = $(this).data('id')-1;
     $('.slider1').slick('slickGoTo', index, true);
   });
