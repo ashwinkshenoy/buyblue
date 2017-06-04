@@ -818,11 +818,12 @@ img {
 
   .mail-group {
     display: flex;
+    // margin-bottom: 10px;
     .mail-input-group {
       display: flex;
       width: 100%;
     }
-    .in-addon {
+    .mail-addon {
       background: $grey3;
       color: $white;
       border-radius: 50px 0 0 50px;
@@ -833,7 +834,7 @@ img {
       display: flex;
       flex: 1;
       justify-content: center;
-      align-items: center;
+      // align-items: center;
     }
     .in-txt1 {
       background: $grey3;
@@ -875,7 +876,7 @@ img {
     border-bottom: solid 1px #656565;
     flex: 1;
     align-items: center;
-    display: grid;
+    margin-top: 10px;
     &:last-child {
       border-bottom: 0;
     }
@@ -888,6 +889,11 @@ img {
   @media screen and (min-width: 768px) {
     .vert-line2 {
       border-right: solid 1px #656565;
+    }
+    @-moz-document url-prefix() {
+      .mail-group {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -903,6 +909,24 @@ img {
         }
       }
     } // foo-mob-col-inverse
+
+    .foo-box {
+      padding: 20px 10px;
+      .mail-group {
+        @-moz-document url-prefix() {
+          & {
+            margin-top: 15px;
+          }
+        }
+        .mail-addon {
+          padding: 8px 10px;
+        }
+        .mail-btn {
+          padding-left: 0;
+          z-index: 1000;
+        }
+      }
+    }
 
     .mob-no-stack {
       flex-direction: column-reverse;
