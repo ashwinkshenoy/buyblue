@@ -21,3 +21,8 @@ do `bower install`
 ###To run built project
 
 `gulp serve:dist`
+
+
+Demo
+
+http://ashwinshenoy.com/buyblue
