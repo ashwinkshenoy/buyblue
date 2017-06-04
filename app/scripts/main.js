@@ -10,7 +10,7 @@ $(document).ready(function(){
   $('.slider1').on('afterChange', function(event, slick, currentSlide){
     $('.content').removeClass('slide-box');
     $('.content[data-id=' + (currentSlide + 1) + ']').addClass('slide-box');
-    console.log(currentSlide);
+    // console.log(currentSlide);
   });
   $('.content').bind('click', function() {
     console.log($(this).data('id'));
